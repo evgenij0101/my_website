@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #f5f5f5; /* Светло-серый цвет */
+    color: #333333; /* Темный цвет текста для контраста */
+    padding: 20px; /* Внутренние отступы */
+    text-align: center; /* Центрирование текста */
+    border-bottom: 1px solid #dddddd; /* Легкая граница снизу */
+}
+
+h1 {
+    background-color: #ffa500; /* Оранжевый цвет фона */
+    color: #ffffff; /* Белый цвет текста для контраста */
+    padding: 10px 20px; /* Внутренние отступы для создания пространства */
+    text-align: center; /* Центрирование текста */
+    border-radius: 5px; /* Скругленные углы (опционально) */
+    margin: 0; /* Убираем лишние отступы */
+}
+
+nav {
+    margin: 20px 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.book-list {
+    display: flex; /* Используем Flexbox для размещения книг в строку */
+    flex-wrap: wrap; /* Разрешаем перенос строк */
+    justify-content: space-between; /* Равномерное распределение блоков */
+    gap: 20px; /* Добавляем расстояние между блоками */
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+.book-item {
+    background: #ffeb3b; /* Насыщенный желтый цвет */
+    border: 1px solid #dddddd; /* Граница блока */
+    border-radius: 5px; /* Скругленные углы */
+    padding: 15px; /* Внутренние отступы */
+    flex: 1 1 calc(30% - 20px); /* Адаптивная ширина блока */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень для блока */
+    text-align: left; /* Выравнивание содержимого по левому краю */
+    max-width: 300px; /* Ограничиваем максимальную ширину блока */
+    display: flex; /* Flexbox для выравнивания содержимого */
+    flex-direction: column; /* Располагаем элементы вертикально */
+    justify-content: space-between; /* Распределяем элементы равномерно */
+}
+
+.book-item img {
+    width: 100%; /* Изображение занимает всю ширину блока */
+    height: auto; /* Автоматическая высота для сохранения пропорций */
+    object-fit: cover; /* Обрезка изображения для сохранения пропорций */
+    margin-bottom: 10px; /* Отступ снизу от изображения */
+    border-radius: 5px; /* Скругленные углы изображения */
+}
+
+.book-details {
+    flex: 1; /* Занимает оставшееся пространство */
+    display: flex; /* Используем Flexbox для выравнивания содержимого */
+    flex-direction: column; /* Располагаем элементы вертикально */
+    justify-content: space-between; /* Распределяем элементы равномерно */
+    text-align: left; /* Выравнивание текста по левому краю */
+    font-size: 14px; /* Размер шрифта для описания */
+    line-height: 1.6; /* Межстрочная высота для читаемости */
+}
+
+.book-details h3 {
+    text-align: center; /* Центрируем заголовок */
+    font-size: 1.5em; /* Размер шрифта для заголовка книги */
+    margin-bottom: 10px; /* Отступ снизу заголовка */
+    margin-top: 0; /* Убираем лишний отступ сверху */
+}
+
+.book-details p {
+    margin: 5px 0; /* Отступы между абзацами */
+}
+
+.download-container {
+    margin-top: 10px; /* Отступ сверху для кнопки */
+    text-align: center; /* Центрируем кнопку внутри контейнера */
+}
+
+.download-button {
+    display: inline-block; /* Устанавливаем блочный элемент для кнопки */
+    margin-top: 10px; /* Отступ сверху для кнопки */
+    padding: 10px 15px; /* Внутренние отступы кнопки */
+    background-color: #35424a; /* Цвет фона кнопки */
+    color: #ffffff; /* Цвет текста кнопки */
+    text-decoration: none; /* Убираем подчеркивание */
+    border-radius: 5px; /* Скругленные углы кнопки */
+    text-align: center; /* Центрирование текста */
+    width: 100%; /* Кнопка занимает всю ширину контейнера */
+    max-width: 200px; /* Ограничиваем максимальную ширину кнопки */
+    margin-left: auto; /* Центрируем кнопку */
+    margin-right: auto; /* Центрируем кнопку */
+}
+
+.download-button:hover {
+    background-color: #2a3b3f; /* Цвет кнопки при наведении */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#books h2 {
+    background-color: #98fb98; /* Салатный цвет */
+    color: #000000; /* Черный текст */
+    padding: 10px;
+    border-radius: 5px; /* Скругленные углы (опционально) */
+    text-align: center; /* Центрирование текста */
+}
+
+#books p {
+    text-align: center; /* Центрирование текста */
+    font-size: 16px; /* Умеренный размер шрифта */
+    line-height: 1.8; /* Увеличенная межстрочная высота для читаемости */
+    margin: 20px 0; /* Отступы сверху и снизу */
+}
+
+article.book-item {
+    background: #ffeb3b; /* Насыщенный желтый цвет */
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    margin: 15px 0;
+    padding: 15px;
+    flex: 1 1 calc(30% - 30px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left; /* Выравнивание содержимого по левому краю */
+}
+
+article.book-item img {
+    width: 210px; /* Фиксированная ширина для всех изображений */
+    height: 335px; /* Фиксированная высота для всех изображений */
+    object-fit: cover; /* Обрезка изображения для сохранения пропорций */
+    display: block;
+    margin: 0 0 10px 0; /* Убираем автоцентрирование и добавляем отступ снизу */
+}
+
+article.book-item h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+article.book-item p {
+    margin: 5px 0;
+}
+
+article.book-item a.download-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #35424a;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+article.book-item a.download-button:hover {
+    background-color: #2a3b3f;
+}
